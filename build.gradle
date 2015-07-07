@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('mysql:mysql-connector-java:5.1.32')
+    compile('mysql:mysql-connector-mxj:5.0.12')
+    compile('org.springframework:spring-jdbc:4.1.7.RELEASE')
+    compile('commons-io:commons-io:2.4')
+    compile('com.google.guava:guava:18.0')
+
+    compile('junit:junit:4.11')
+    compile('org.slf4j:slf4j-api:1.7.12')
+//    testCompile('mysql:mysql-connector-java:5.1.36')
+    testCompile('ch.qos.logback:logback-classic:1.1.3')
+
+}
